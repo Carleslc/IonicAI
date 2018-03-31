@@ -3,6 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+declare const window;
+
 import { HomePage } from '../pages/home/home';
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +18,12 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      window["ApiAIPlugin"].init({
+          clientAccessToken: "8268dd46704a48b0888c2418c6a4f8ed", // insert your client access key here
+          lang: "en" // set lang tag from list of supported languages
+        }
+      );
     });
   }
 }
-

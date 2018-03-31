@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-apiai@^1.7.4",
+        "scope": null,
+        "escapedName": "cordova-plugin-apiai",
+        "name": "cordova-plugin-apiai",
+        "rawSpec": "^1.7.4",
+        "spec": ">=1.7.4 <2.0.0",
+        "type": "range"
+      },
+      "/Users/carleslc/GitHub/IonicAI"
+    ]
+  ],
+  "_from": "cordova-plugin-apiai@>=1.7.4 <2.0.0",
+  "_id": "cordova-plugin-apiai@1.7.4",
+  "_inCache": true,
+  "_location": "/cordova-plugin-apiai",
+  "_nodeVersion": "0.12.5",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-apiai-1.7.4.tgz_1468934570579_0.15496590500697494"
+  },
+  "_npmUser": {
+    "name": "sstepashka",
+    "email": "kuragin@speaktoit.com"
+  },
+  "_npmVersion": "3.8.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-apiai@^1.7.4",
+    "scope": null,
+    "escapedName": "cordova-plugin-apiai",
+    "name": "cordova-plugin-apiai",
+    "rawSpec": "^1.7.4",
+    "spec": ">=1.7.4 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-apiai/-/cordova-plugin-apiai-1.7.4.tgz",
+  "_shasum": "56d8141094c69ac572c1b43d06d3947b5a68754c",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-apiai@^1.7.4",
+  "_where": "/Users/carleslc/GitHub/IonicAI",
+  "author": {
+    "name": "api.ai"
+  },
+  "bugs": {
+    "url": "https://github.com/api-ai/api-ai-cordova/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-apiai",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Plugin makes it easy to integrate your Cordova application with https://api.ai natural language processing service.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "56d8141094c69ac572c1b43d06d3947b5a68754c",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-apiai/-/cordova-plugin-apiai-1.7.4.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.0.0"
+    }
+  ],
+  "gitHead": "ba88e32de9e4b4b1975f9ab6a8c2ccd703e38973",
+  "homepage": "https://github.com/api-ai/api-ai-cordova#readme",
+  "keywords": [
+    "language processing",
+    "voice recognition",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0 License",
+  "maintainers": [
+    {
+      "name": "sstepashka",
+      "email": "kuragin@speaktoit.com"
+    },
+    {
+      "name": "xvir",
+      "email": "danil.skachkov@speaktoit.com"
+    }
+  ],
+  "name": "cordova-plugin-apiai",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/api-ai/api-ai-cordova.git"
+  },
+  "scripts": {},
+  "version": "1.7.4"
+}

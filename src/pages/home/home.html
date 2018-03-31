@@ -1,14 +1,53 @@
-<ion-header>
+<ion-header hidden>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic AI
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content #content padding>
+
+  <ion-list no-lines>
+    <ion-item *ngFor="let message of messages" class="chat-item" text-wrap>
+      <ion-avatar item-left *ngIf="message.sender == 'api'">
+        <img src="assets/imgs/apiai.png">
+      </ion-avatar>
+      <ion-avatar item-right *ngIf="message.sender == 'me'">
+        <img src="assets/imgs/ionic.png">
+      </ion-avatar>
+      <div *ngIf="message.sender == 'api'" class="bubble me">
+        <h3> {{ message.text }} </h3>
+      </div>
+      <div *ngIf="message.sender == 'me'" class="bubble you">
+        <h3> {{ message.text }} </h3>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab top right>
+    <button ion-fab mini color="light" (click)="toggleVolume()">
+      <ion-icon *ngIf="volume" name="volume-up"></ion-icon>
+      <ion-icon *ngIf="!volume" name="volume-off"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-fab bottom right>
+    <button ion-fab color="danger" (click)="sendVoice()">
+      <ion-spinner *ngIf="recording" name="dots" class="spinner-energized"></ion-spinner>
+      <ion-icon *ngIf="!recording" name="mic"></ion-icon>
+    </button>
+  </ion-fab>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+      <ion-input #input type="text" placeholder="Write your message" [(ngModel)]="text"></ion-input>
+      <button ion-button icon-only item-right clear (click)="sendText(); input.setFocus()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

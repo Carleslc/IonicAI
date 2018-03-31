@@ -1,0 +1,60 @@
+buildscript {
+	ext {
+		kotlinVersion = '1.2.21'
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+	}
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-spring'
+apply plugin: 'org.springframework.boot'
+
+group = 'me.carleslc'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+compileKotlin {
+	kotlinOptions {
+		freeCompilerArgs = ["-Xjsr305=strict"]
+		jvmTarget = "1.8"
+	}
+}
+compileTestKotlin {
+	kotlinOptions {
+		freeCompilerArgs = ["-Xjsr305=strict"]
+		jvmTarget = "1.8"
+	}
+}
+
+apply plugin: 'war'
+
+war {
+	baseName = 'ionic-ai'
+}
+
+
+repositories {
+	maven { url "https://jitpack.io" }
+	jcenter()
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
+	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+	compile('com.google.code.gson:gson:2.8.2')
+	compile('com.tmsdurham.actions:actions-on-google:1.6.2')
+	compile('com.tmsdurham.actions:actions-on-google-core:1.6.2')
+	compile('com.github.carleslc:kotlin-extensions:0.7.1')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+}

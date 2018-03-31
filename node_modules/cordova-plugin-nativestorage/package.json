@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-nativestorage",
+        "scope": null,
+        "escapedName": "cordova-plugin-nativestorage",
+        "name": "cordova-plugin-nativestorage",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/carleslc/GitHub/IonicAI"
+    ]
+  ],
+  "_from": "cordova-plugin-nativestorage@latest",
+  "_id": "cordova-plugin-nativestorage@2.3.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-nativestorage",
+  "_nodeVersion": "8.9.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-nativestorage_2.3.0_1518615033734_0.7602130875957704"
+  },
+  "_npmUser": {
+    "name": "gillescallebaut",
+    "email": "callebaut.gilles@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-nativestorage",
+    "scope": null,
+    "escapedName": "cordova-plugin-nativestorage",
+    "name": "cordova-plugin-nativestorage",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-nativestorage/-/cordova-plugin-nativestorage-2.3.0.tgz",
+  "_shasum": "57ce1bdca24f25b29e6fa366c9d12a8c9d86ca1f",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-nativestorage",
+  "_where": "/Users/carleslc/GitHub/IonicAI",
+  "author": {
+    "name": "Gilles Callebaut",
+    "email": "callebaut.gilles@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage/issues"
+  },
+  "contributors": [
+    {
+      "name": "Alok Rajiv"
+    },
+    {
+      "name": "Yann Deshayes",
+      "email": "deshayes.yann@gmail.com",
+      "url": "https://github.com/ydeshayes"
+    }
+  ],
+  "cordova": {
+    "id": "cordova-plugin-nativestorage",
+    "platforms": [
+      "android",
+      "ios",
+      "browser",
+      "windows",
+      "osx"
+    ]
+  },
+  "dependencies": {},
+  "description": "Native storage of variables in Android, iOS and Windows",
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Usn2ZGOAVBqPydgUq+huV4c3JEOGSfwpN0w8LPjMJ5Jxl3YGmsWQVe15GnccKwGsPtmZuWVFKXJ+cZW8sYU2UQ==",
+    "shasum": "57ce1bdca24f25b29e6fa366c9d12a8c9d86ca1f",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-nativestorage/-/cordova-plugin-nativestorage-2.3.0.tgz",
+    "fileCount": 16,
+    "unpackedSize": 102008
+  },
+  "gitHead": "ed3e0d5775f904671e325988562eb74892476234",
+  "homepage": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage#README.md",
+  "keywords": [
+    "cordova",
+    "device",
+    "storage",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "cordova-windows",
+    "LocalStorage",
+    "NSUserDefaults",
+    "SharedPreferences"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "gillescallebaut",
+      "email": "gilles.callebaut.cs@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-nativestorage",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCocoaProject/cordova-plugin-nativestorage.git"
+  },
+  "scripts": {
+    "jshint": "jshint www && jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "2.3.0"
+}
